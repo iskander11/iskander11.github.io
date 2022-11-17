@@ -6,7 +6,7 @@ import { changeStatus } from "./list.js";
 import { removeTask } from "./list.js";
 import { sortList } from "./list.js";
 
-const formHandler = (event) => {
+export const formHandler = (event) => {
   event.preventDefault();
   const target = event.target;
   const inputName = target.children[0].name;
@@ -25,15 +25,6 @@ const formHandler = (event) => {
   });
   sortList("status");
   render();
-  formsUpdate();
-};
-
-export const formsUpdate = () => {
-  const addTaskForms = document.querySelectorAll(".todo-main-elements-input");
-
-  for (let form of addTaskForms) {
-    form.addEventListener("submit", formHandler);
-  }
 };
 
 export const checkBoxHandle = (event) => {
@@ -44,7 +35,6 @@ export const checkBoxHandle = (event) => {
   changeStatus(checkBoxId);
   sortList("status");
   render();
-  formsUpdate();
 };
 
 export const removeHandler = (event) => {
@@ -52,5 +42,4 @@ export const removeHandler = (event) => {
   const taskId = +deleteButton.parentElement.dataset.id;
   removeTask(taskId);
   render();
-  formsUpdate();
 };
