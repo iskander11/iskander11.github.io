@@ -55,10 +55,9 @@ export const removeTask = (taskId) => {
 };
 
 export const sortList = (category) => {
-  list =
-    category === "id"
-      ? [...list.sort((a, b) => a.id - b.id)]
-      : category === "status"
-      ? [...list.sort((a, b) => (a.status > b.status ? -1 : 1))]
-      : list;
+  if (category === "status") {
+    list = [...list.sort((a, b) => (a.status > b.status ? -1 : 1))];
+  } else if (category === "id") {
+    return [...list.sort((a, b) => a.id - b.id)][list.length - 1].id;
+  }
 };

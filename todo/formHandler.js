@@ -15,15 +15,15 @@ const formHandler = (event) => {
     alert("Поле не должно быть пустым");
     return null;
   }
-  sortList("id");
-  const listId = list.length > 0 ? list[list.length - 1].id + 1 : 1;
+
+  const listId = list.length > 0 ? sortList("id") + 1 : 1;
   addTask({
     name: inputValue,
     priority: inputName,
     status: STATUS.IN_PROGRESS,
     id: listId,
   });
-
+  sortList("status");
   render();
   formsUpdate();
 };
