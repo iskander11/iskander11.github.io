@@ -40,5 +40,5 @@ export const removeHandler = (event) => {
   const deleteButton = event.target;
   const taskId = +deleteButton.parentElement.dataset.id;
   removeTask(taskId);
-  render(list);
+  render(sortByStatus());
 };
