@@ -40,4 +40,3 @@ tabs.addEventListener("click", (event) => {
       break;
   }
 });
-console.log(thirdCard);
