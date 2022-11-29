@@ -1,8 +1,8 @@
 import { drawError } from "../VIEW/notification/notification.js";
 export const errorHandle = (error) => {
-  if (error.message === "Failed to fetch") {
-    drawError("Connection failed");
+  if (error.name === "TypeError") {
+    drawError("Ошибка запроса или сети:");
   } else {
-    drawError(error.message);
+    drawError(error.name);
   }
 };
