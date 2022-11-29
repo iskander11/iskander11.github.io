@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="VIEW/styles.css">
+    <link rel="stylesheet" href="VIEW/notification/notification.css">
     <title>Weather</title>
 </head>
 <body>
     <main class = 'main'>
         <form class="main__city-search">
-            <input type="text" class="main__city-search__input" placeholder="Aktobe">
+            <input type="text" id="searchInput" class="main__city-search__input" placeholder="Aktobe" autocomplete="off">
             <button type="submit" class="main__city-search__image"></button>
         </form>
         <section class="main_info-section">
@@ -48,7 +49,7 @@
                                 </section>
                                 <section class="main_info-section_left-side_card-third-minicard__footer-weather">
                                     <p>Rain</p>
-                                    <img src="images/rain.png" alt="">
+                                    <img src="/images/rain.png" alt="">
                                 </section>
                             </section>
                         </section>
@@ -64,7 +65,7 @@
                                 </section>
                                 <section class="main_info-section_left-side_card-third-minicard__footer-weather">
                                     <p>Rain</p>
-                                    <img src="images/rain.png" alt="">
+                                    <img src="/images/rain.png" alt="">
                                 </section>
                             </section>
                         </section>
@@ -80,7 +81,7 @@
                                 </section>
                                 <section class="main_info-section_left-side_card-third-minicard__footer-weather">
                                     <p>Rain</p>
-                                    <img src="images/rain.png" alt="">
+                                    <img src="/images/rain.png" alt="">
                                 </section>
                             </section>
                         </section>
@@ -97,16 +98,12 @@
                 <section class="main_info-section_locations-title">
                     <p>Added Locations:</p></section>
                 <section class="main_info-section_locations-cities">
-                    <p>Amur</p>
-                    <p>Samara</p>
-                    <p>Bali</p>
-                    <p>Dane</p>
-                    <p>Kilo</p>
-                    <p>Nur-Sultan</p>
+                    <p>Please add some location</p>
                 </section>
             </section>
         </section>
+        
     </main>
-    <script src="tabs.js"></script>
+    <script src="connector.js" type="module"></script>
 </body>
 </html>
