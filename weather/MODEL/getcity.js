@@ -2,7 +2,7 @@ import { errorHandle } from "../CONTROLLER/error.js";
 import { weatherInterface } from "./weather.js";
 import { forecastInterface } from "./forecast.js";
 export const getCityInfo = async (city) => {
-  const serverUrl = "http://api.openweathermap.org/data/2.5/weather";
+  const serverUrl = "https://api.openweathermap.org/data/2.5/weather";
   const apiKey = "102c345b77ee0ea5c3ea50c6e797f5aa";
   const url = `${serverUrl}?q=${city}&appid=${apiKey}`;
 
@@ -17,7 +17,7 @@ export const getCityInfo = async (city) => {
 };
 
 const getForecast = async (cityName) => {
-  const serverUrl = "http://api.openweathermap.org/data/2.5/forecast";
+  const serverUrl = "https://api.openweathermap.org/data/2.5/forecast";
   const apiKey = "102c345b77ee0ea5c3ea50c6e797f5aa";
   const url = `${serverUrl}/?q=${cityName}&appid=${apiKey}`;
 
