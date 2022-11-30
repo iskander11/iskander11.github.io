@@ -28,5 +28,10 @@ export const addCity = (event) => {
 
 export const locationHandle = (event) => {
   const cityName = event.target.dataset.cityname;
-  render(getCityInfo(cityName));
+  if (cityName) {
+    render(getCityInfo(cityName));
+  } else if (event.target.tagName === "SPAN") {
+    removeLocation(event.target.closest("p").dataset.cityname);
+    cityRender(locations);
+  }
 };

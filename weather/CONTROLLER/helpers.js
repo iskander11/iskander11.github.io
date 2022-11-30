@@ -1,5 +1,3 @@
-export const toCelsius = (num) => Math.round(num - 273.15);
-
 export const getTimeFrom = (method, value) => {
   switch (method) {
     case "timestamp to hours and minutes":

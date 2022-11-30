@@ -41,7 +41,6 @@ export const giveTabs = () => {
         thirdCard.style.display = "block";
         firstCard.style.display = "none";
         secondCard.style.display = "none";
-        break;
     }
   });
 };
