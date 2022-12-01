@@ -1,5 +1,5 @@
-import { TIMEMETHOD } from "./timemethods.js";
-import { getTimeFrom } from "../CONTROLLER/helpers.js";
+import { TIMEMETHOD } from "../timemethods.js";
+import { getTimeFrom } from "../../CONTROLLER/helpers.js";
 export const forecastInterface = (object) => {
   let forecast = [];
   for (let hour of object.list) {

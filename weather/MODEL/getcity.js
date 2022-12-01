@@ -1,6 +1,6 @@
 import { errorHandle } from "../CONTROLLER/error.js";
-import { weatherInterface } from "./weather.js";
-import { forecastInterface } from "./forecast.js";
+import { weatherInterface } from "./Objects/weather.js";
+import { forecastInterface } from "./Objects/forecast.js";
 export const getCityInfo = async (city, lang) => {
   const serverUrl = "https://api.openweathermap.org/data/2.5/weather";
   const apiKey = "102c345b77ee0ea5c3ea50c6e797f5aa";

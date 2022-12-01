@@ -1,8 +1,4 @@
-import { TIMEMETHOD } from "../../MODEL/timemethods.js";
-import {
-  createElementWithClassname,
-  getTimeFrom,
-} from "../../CONTROLLER/helpers.js";
+import { createElementWithClassname } from "../../CONTROLLER/helpers.js";
 export const detailsCard = (
   { name, temp, feelsLike, WeatherDescription, sunrise, sunset },
   langObj

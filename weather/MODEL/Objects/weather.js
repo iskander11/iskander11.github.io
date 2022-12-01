@@ -1,5 +1,5 @@
-import { TIMEMETHOD } from "./timemethods.js";
-import { getTimeFrom } from "../CONTROLLER/helpers.js";
+import { TIMEMETHOD } from "../timemethods.js";
+import { getTimeFrom } from "../../CONTROLLER/helpers.js";
 export const weatherInterface = (Object) => {
   const needInfo = {
     id: Object.id,

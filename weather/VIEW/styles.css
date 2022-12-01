@@ -25,11 +25,13 @@ li {
 .active {
   background-color: black;
   color: white;
+  transition: 0.5s;
 }
 
 .lang-active {
   background: black;
   color: white;
+  transition: 0.5s;
 }
 
 .like {
