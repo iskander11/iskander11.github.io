@@ -1,0 +1,167 @@
+.main {
+  max-width: 320px;
+  max-height: 533px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.main-options {
+  justify-content: space-between;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding-top: 9px;
+  display: flex;
+}
+
+.main-options_settings {
+  width: 98px;
+  height: 32px;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.main-options_exit {
+  width: 66px;
+  height: 32px;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.main-view {
+  width: 304px;
+  height: 437px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #000;
+  flex-direction: column;
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  padding: 5px;
+  display: flex;
+  overflow-y: auto;
+}
+
+.main-view-message {
+  width: max-content;
+  word-wrap: break-word;
+  max-width: 245px;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  display: flex;
+}
+
+.main-view-message_time {
+  width: inherit;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 16px;
+  display: inline-block;
+}
+
+.main-form {
+  margin-top: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  display: flex;
+}
+
+.main-form_input {
+  width: 267px;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  outline: none;
+}
+
+.main-form_button {
+  box-sizing: border-box;
+  width: 29px;
+  height: 32px;
+  outline: none;
+  margin-left: 8px;
+}
+
+.sending {
+  background-color: #f6f6f6;
+}
+
+.delivered {
+  background-color: #e5e5e5;
+}
+
+.companion {
+  padding-left: 8px;
+}
+
+.user {
+  align-self: flex-end;
+  padding-right: 8px;
+}
+
+.options {
+  width: 273px;
+  height: 319px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.options-form {
+  margin-top: 16px;
+}
+
+.options-form_input {
+  width: 207px;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  outline: none;
+  margin-top: 8px;
+}
+
+.options-form_button {
+  width: 30px;
+  height: 32px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.popupS-open .my-overlay {
+  background: #535353;
+  opacity: 1 !important;
+}
+
+.form-auth {
+  flex-direction: column;
+  display: flex;
+}
+
+.form-auth button {
+  width: 120px;
+  height: 34px;
+  margin-top: 14px;
+}
+
+.form-auth input {
+  width: 245px;
+  height: 32px;
+  outline: none;
+}
+
+/*# sourceMappingURL=index.85764bcc.css.map */
