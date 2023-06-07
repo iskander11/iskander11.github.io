@@ -1,0 +1,20 @@
+APP INFO
+App Name: TG_BOT
+
+App Redirect URLs: None
+
+App ID: b4b50463e1a64dbf88253c44679c18f1
+
+App Secret: 2c33ac13c4b14c7ea9e2fc211c6b652b
+
+App Type: public
+
+App Access: call_api
+
+Created: 2023-05-16 13:57:54
+
+CLIEN_ID:48850
+"id": 135028,
+
+exclusive_sn_bot
+6198268825:AAEZP0QbdkvSbYBjrXXWxfBN2ueo3ULXxWM
